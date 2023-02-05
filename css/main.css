@@ -1,0 +1,456 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+:root {
+  --color-gtea: #d0f0c0;
+  --color-lilac: #e6d7ff;
+  --color-lavender: #D7B4F3;
+  --color-cherry: #ffb7c5;
+  --color-matcha: #69bf64;
+  --color-darkgrey: #2d2d2d;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  padding: 2rem;
+}
+
+.section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+p {
+  width: 70%;
+  max-width: 500px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.nunito {
+  font-family: 'nunito', sans-serif;
+  ;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+  font-family: 'nunito', sans-serif;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*
+NAVIGATION BAR 
+https://www.w3schools.com/howto/howto_js_topnav.asp
+*/
+
+nav {
+  background-color: var(--color-lavender);
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  color: var(--color-darkgrey);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: var(--color-cherry);
+  color: var(--color-darkgrey);
+  transition: ease-in-out 0.5s;
+}
+
+nav a.active {
+  background-color: var(--color-matcha);
+  color: var(--color-darkgrey);
+}
+
+
+
+nav a:focus {
+  color: #F06292;
+}
+
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* In-text link */
+.text-link:hover {
+  color: #69bf64;
+}
+
+.text-link:focus {
+  color: #F06292;
+}
+
+/* Styling for the navigation button 
+https://www.w3schools.com/css/css3_buttons.asp */
+.button {
+  display: inline-block;
+  padding: 0.5rem;
+  color: #2d2d2d;
+  background-color: var(--color-lavender);
+  text-decoration: none;
+  border-radius: .8em;
+  font-weight: bold;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button:hover,
+.button:focus {
+  color: #2d2d2d;
+  background-color: var(--color-gtea);
+}
+
+#submit {
+  background-color: var(--color-gtea);
+}
+
+#submit:hover {
+  background-color: var(--color-lavender);
+}
+
+#reset {
+  background-color: var(--color-cherry);
+}
+
+#reset:hover {
+  background-color: var(--color-lavender);
+}
+
+/* Text input field */
+input {
+  padding: 0.5em;
+  margin: .3em;
+  display: inline-block;
+  border-radius: 0.8em;
+  border: 2px solid #2d2d2d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid var(--color-matcha);
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+}
+
+
+/* Radio 
+https://www.youtube.com/watch?v=sSF0bXFUFGM
+*/
+
+.container input[type="radio"] {
+  display: none;
+}
+
+/* button of the radio */
+.container label {
+  position: relative;
+  color: var(--color-darkgrey);
+  border: 2px solid var(--color-darkgrey);
+  border-radius: 8px;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0.25rem;
+  font-weight: bold;
+}
+
+/* circle of the radio button */
+.container label:before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 2px solid var(--color-darkgrey);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* button color when checked*/
+.container input[type="radio"]:checked+label {
+  background-color: var(--color-gtea);
+  color: var(--color-darkgrey);
+}
+
+/* circle of the radio button when checked*/
+.container input[type="radio"]:checked+label:before {
+  height: 10px;
+  width: 10px;
+  border: 5px solid var(--color-darkgrey);
+}
+
+/* code from 
+https://codepen.io/nxworld/pen/ZYNOBZ
+*/
+
+figure {
+  overflow: hidden;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 300px;
+  height: auto;
+}
+
+figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+figure img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* Numbered list
+https://blog.logrocket.com/styling-numbered-lists-with-css-counters/
+*/
+div.list {
+  counter-reset: list-number;
+}
+
+div.list div:before {
+  counter-increment: list-number;
+  content: counter(list-number);
+}
+
+div.list div:before {
+  counter-increment: list-number;
+  content: counter(list-number);
+
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background-color: var(--color-lavender);
+  border-radius: 50%;
+  color: var(--color-darkgrey);
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* product card */
+.product {
+  width: 300px;
+  background-color: var(--color-lavender);
+  margin: 1em;
+  padding-bottom: 0.1em;
+
+}
+
+.product h4,
+.product h5 {
+  margin-top: 0.5em;
+  margin-left: 2rem;
+}
+
+/*https://www.youtube.com/watch?v=R-1Hh--SrX0*/
+select {
+  appearance: none;
+  outline: 0%;
+  box-shadow: none;
+  border: 0 !important;
+  background: white;
+  background-image: none;
+  font-weight: 600;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: white;
+  overflow: hidden;
+  border-radius: 0.7em;
+  border: 1px solid var(--color-darkgrey);
+}
+
+select {
+  flex: 1;
+  padding: 0.5em;
+  color: var(--color-darkgrey);
+  cursor: pointer;
+  font-size: 1em;
+  outline: none;
+}
+
+
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: white;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+
+/* arrow thing select list*/
+.select:hover::after {
+  color: var(--color-lavender);
+}
+
+/* shopping cart */
+.payment-form {
+  margin-left: 10px;
+  background-color: var(--color-gtea);
+  display: inline-block;
+}
+
+.payment-form legend {
+  background-color: var(--color-matcha);
+  border-radius: 0.7em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+}
+
+.right-side-checkout label {
+  margin-left: 10px;
+}
+
+.total {
+  flex: 25%;
+  margin: 10px;
+  padding: 20px;
+  height: 200px;
+  border-radius: .7rem;
+  background-color: var(--color-gtea);
+  font-weight: 700;
+  /*border: 2px solid var(--color-darkgrey);*/
+}
+
+#checkout-button {
+  background: var(--color-matcha);
+}
+
+#checkout-button:hover {
+  background: var(--color-gtea);
+}
+
+.total p {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 
+Branding ideas
+*/
+
+
+.palettes div {
+  padding: 0.4em;
+  padding-inline: 0.8rem;
+  border-radius: .8rem;
+  min-width: 10em;
+  max-width: 20em;
+  margin-bottom: 0.5em;
+}
+
+/* Pastel Flower */
+.palettes #lavender {
+  background-color: var(--color-lavender)
+}
+
+.palettes #cherry {
+  background-color: var(--color-cherry);
+}
+
+.palettes #gtea {
+  background-color: var(--color-gtea);
+}
+
+/*matcha*/
+.palettes #matcha {
+  background-color: #69bf64;
+}
+
+/*
+.palettes #oak {
+  background-color: #d0ac81;
+}
+.palettes #walnut {
+  background-color: #533012;
+}
+*/
+
+/* Neutrals */
+/*
+.palettes #beige {
+  background-color: #F7F2D6;
+}
+*/
+.palettes #grey {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.palettes #white {
+  background-color: white;
+
+}
