@@ -62,7 +62,7 @@
         <p>.button</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        <code>&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Add to cart&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
         <a class="button" href="#">Add to cart</a>
@@ -80,8 +80,9 @@
         <h4>CSS selector:</h4>
         .button
         <h4>Sample code:</h4>
-        <code>&lt;input class="button" type="submit"&gt;</code>
-        <code>&lt;input class="button" type="reset"&gt;</code>
+        <code>&lt;input type=&quot;search&quot;&gt;<br>
+          &lt;input class=&quot;button&quot; id=&quot;submit&quot; type=&quot;submit&quot;&gt;<br>
+          &lt;input class=&quot;button&quot; id=&quot;reset&quot; type=&quot;reset&quot;&gt;</code>
         <h4>Rendered element:</h4>
 
         <form>
@@ -105,7 +106,11 @@
         <h4>CSS selector:</h4>
         input
         <h4>Sample code:</h4>
-        <code>&lt;label for="input"&gt; Search: &lt;/label&gt;</code>
+        <code>&lt;form&gt;<br>
+          &lt;label for=&quot;input&quot;&gt; Search: &lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; class=&quot;input&quot;&gt;<br>
+          &lt;/form&gt;
+        </code>
         <h4>Rendered element:</h4>
         <form>
           <label for="input"> Search: </label>
@@ -119,7 +124,12 @@
         <h4>CSS selector:</h4>
         .radio
         <h4>Sample code:</h4>
-        <code>&lt;input type="radio" class="radio" name="radio"&gt;</code>
+        <code>&lt;input type=&quot;radio&quot; class=&quot;radio&quot; name=&quot;size&quot; id=&quot;small&quot; checked=&quot;checked&quot;&gt;<br>
+          &lt;label for=&quot;small&quot;&gt;Small&lt;/label&gt;<br>
+          &lt;input type=&quot;radio&quot; class=&quot;radio&quot; id=&quot;medium&quot; name=&quot;size&quot;&gt;<br>
+          &lt;label for=&quot;medium&quot;&gt;Medium&lt;/label&gt;<br>
+          &lt;input type=&quot;radio&quot; class=&quot;radio&quot; id=&quot;large&quot; name=&quot;size&quot;&gt;<br>
+          &lt;label for=&quot;large&quot;&gt;Large&lt;/label&gt;</code>
         <h4>Rendered element:</h4>
 
         <div class="container">
@@ -140,8 +150,14 @@
         img
         <h4>Sample code:</h4>
 
-        <code>&lt;a href="https://www.etsy.com/ca/listing/1192358051/cute-frog-sticker-pack-waterproof"&gt;</code>
-        <code>&lt;img src="https://i.etsystatic.com/13486711/r/il/245393/3720451436/il_794xN.3720451436_l0t2.jpg" &gt;</code>
+        <code>&lt;a href=&quot;https://www.etsy.com/ca/listing/1192358051/cute-frog-sticker-pack-waterproof&quot;&gt;<br>
+
+          &lt;div&gt;<br>
+            &lt;figure&gt;<br>
+              &lt;img src=&quot;https://i.etsystatic.com/13486711/r/il/245393/3720451436/il_794xN.3720451436_l0t2.jpg&quot;&gt;&lt;img&gt;<br>
+            &lt;/figure&gt;<br>
+          &lt;/div&gt;<br>
+        &lt;/a&gt;</code>
         <h4>Rendered element:</h4>
         <a href="https://www.etsy.com/ca/listing/1192358051/cute-frog-sticker-pack-waterproof">
 
@@ -168,7 +184,10 @@
         <h4>CSS selector:</h4>
         .h2 .h3 .h4 .h5
         <h4>Sample code:</h4>
-        <code>&lt;h2&gt;Section title&lt;/h2&gt;</code>
+        <code>&lt;h2&gt;Section title&lt;/h2&gt;<br>
+          &lt;h3&gt;Navigation element&lt;/h3&gt;<br>
+          &lt;h4&gt;Title of product&lt;/h4&gt;<br>
+          &lt;h5&gt;Price of product&lt;/h5&gt;</code>
         <h4>Rendered element:</h4>
 
         <h2>Section title</h2>
@@ -183,7 +202,17 @@
         p
         <h4>Sample code:</h4>
 
-        <code>&lt;p&gt; Hello &lt;/p&gt;</code>
+        <code>
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida et ex ac blandit. Donec efficitur dui ut
+          blandit dapibus. Maecenas congue, neque ut luctus rhoncus, turpis eros ullamcorper massa, a imperdiet nunc
+          urna quis lacus. Aenean efficitur purus nulla, imperdiet semper nibh euismod non. Vivamus dolor nisl, eleifend
+          ut hendrerit id, tincidunt ac neque. In dapibus ex augue, in luctus velit feugiat non. Suspendisse a erat
+          tortor. Donec mattis turpis at mi placerat, nec tempor purus egestas. Nam et efficitur ex, sed dignissim leo.
+          Mauris dignissim lacus vitae elementum auctor. Ut eget neque justo. Aenean varius odio quam, at interdum
+          tortor efficitur sit amet.
+
+          &lt;/p&gt;
+        </code>
 
         <h4>Rendered element:</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida et ex ac blandit. Donec efficitur dui ut
@@ -200,10 +229,16 @@
       <section class="element">
         <h3>Numbered Lists</h3>
         <h4>CSS selector:</h4>
-        ol li ul
+        .list
         <h4>Sample code:</h4>
 
-        <code>&lt;li&gt;stickers&lt;/li&gt;</code>
+        <code>
+          &lt;div class=&quot;list&quot;&gt;<br>
+          &lt;div&gt;stickers&lt;/div&gt;<br>
+          &lt;div&gt;apparel&lt;/div&gt;<br>
+          &lt;div&gt;tote bags&lt;/div&gt;<br>
+        &lt;/div&gt;
+      </code>
 
         <h4>Rendered element:</h4>
         <div class="list">
