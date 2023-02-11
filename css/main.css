@@ -3,6 +3,7 @@
   Default styling for the style guide 
 */
 
+/* Colors*/
 :root {
   --color-gtea: #d0f0c0;
   --color-lilac: #e6d7ff;
@@ -35,9 +36,9 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 
+/* Font styling */
 .nunito {
   font-family: 'nunito', sans-serif;
-  ;
 }
 
 .raleway {
@@ -69,7 +70,7 @@ nav {
   background-color: var(--color-lavender);
   overflow: hidden;
 }
-
+/* Nav styling*/
 nav a {
   float: left;
   color: var(--color-darkgrey);
@@ -89,7 +90,6 @@ nav a.active {
   background-color: var(--color-matcha);
   color: var(--color-darkgrey);
 }
-
 
 
 nav a:focus {
@@ -225,7 +225,9 @@ https://www.youtube.com/watch?v=sSF0bXFUFGM
   border: 5px solid var(--color-darkgrey);
 }
 
-/* code from 
+/* 
+Image hover
+code from 
 https://codepen.io/nxworld/pen/ZYNOBZ
 */
 
@@ -283,11 +285,6 @@ div.list div:before {
 
 
 /* 
-  TEXT ELEMENTS -------------------
-*/
-
-
-/* 
   COMBINED ELEMENTS -------------------
 */
 
@@ -306,7 +303,8 @@ div.list div:before {
   margin-left: 2rem;
 }
 
-/*https://www.youtube.com/watch?v=R-1Hh--SrX0*/
+/* Custom Drop down menu
+https://www.youtube.com/watch?v=R-1Hh--SrX0*/
 select {
   appearance: none;
   outline: 0%;
