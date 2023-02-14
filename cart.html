@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Your Shopping Cart</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=nunswap');
+    </style>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#Shop">Shop</a>
+        <a href="#Cart">Cart</a>
+        <a href="#Contact">Contact</a>
+        <a href="#About">About</a>
+    </nav>
+</head>
+
+<body>
+
+    <section>
+        <div class="banner">
+            <h2 class="nunito"> review your cart</h2>
+        </div>
+    </section>
+    <section>
+        <div class="checkout-layout">
+            <div class="small-container cart-page">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <!--Table rows-->
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img
+                                    src="https://i.etsystatic.com/13486711/r/il/245393/3720451436/il_1140xN.3720451436_l0t2.jpg">
+                                <div>
+                                    <p>Frog Sticker Pack</p>
+                                    <h5>Price: $10</h5>
+                                    <button class="button">Remove</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$14.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img
+                                    src="https://i.etsystatic.com/25543253/r/il/475077/3419491114/il_794xN.3419491114_cfr3.jpg">
+                                <div>
+                                    <p>Froggy Tee</p>
+                                    <h5>Price: $20</h5>
+                                    <button class="button">Remove</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$20.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img
+                                    src="https://i.etsystatic.com/13009824/r/il/0560ad/3378126283/il_794xN.3378126283_gqxt.jpg">
+                                <div>
+                                    <p>Cherry Blossom Bird Enamel Pin</p>
+                                    <h5>Price: $15</h5>
+                                    <button class="button">Remove</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$15.00</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="right-side-checkout">
+                <div class="total">
+                    <p><span>Subtotal</span> <span>$90</span></p>
+                    <p><span>Taxes </span> <span>$10.8 </span></p>
+                    <p><span>Estimated Shipping </span> <span>$12</span></p>
+                    <p><span>Total </span> <span>$112.80</span></p>
+                    <button class="button" id="checkout-button">Checkout</button>
+                </div>
+                <form class="payment-form">
+                    <fieldset>
+                        <legend>Shipping</legend>
+                        <label for="customer-name">Name:</label>
+                        <input type="text" id="customer-name2" name="shipping">
+                        <label for="email">Email:</label>
+                        <input type="email" id="checkout-email2" name="shipping">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address2" name="shipping">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Payment</legend>
+                        <label for="ccnum">Credit card number</label>
+                        <input type="number" name="ccnum">
+                        <label for="ccv">CCV:</label>
+                        <input type="number" name="ccv">
+                    </fieldset>
+                </form>
+                <div class="container">
+                    <input class="input" type="radio" id="Paypal2" name="checkout-info">
+                    <label for="Paypal2">Paypal</label>
+                    <input type="radio" id="Visa2" name="checkout-info">
+                    <label for="Visa2">Visa</label>
+                    <input type="radio" id="Interac2" name="checkout-info">
+                    <label for="Interac2">Interac</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

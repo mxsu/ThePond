@@ -3,6 +3,7 @@
   Default styling for the style guide 
 */
 
+/* Colors*/
 :root {
   --color-gtea: #d0f0c0;
   --color-lilac: #e6d7ff;
@@ -39,9 +40,9 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 
+/* Font styling */
 .nunito {
   font-family: 'nunito', sans-serif;
-  ;
 }
 
 .raleway {
@@ -72,13 +73,16 @@ https://www.w3schools.com/howto/howto_js_topnav.asp
 nav {
   background-color: var(--color-lavender);
   overflow: hidden;
+  margin: -0.5rem -1rem 0 -1rem;
+  padding-left: 1rem;
 }
 
+/* Nav styling*/
 nav a {
   float: left;
   color: var(--color-darkgrey);
   text-align: center;
-  padding: 14px 16px;
+  padding: 1rem 1rem 1rem 1rem;
   text-decoration: none;
   font-size: 17px;
 }
@@ -95,9 +99,8 @@ nav a.active {
 }
 
 
-
 nav a:focus {
-  color: #F06292;
+  background-color: var(--color-matcha);
 }
 
 
@@ -178,7 +181,7 @@ form label {
   display: block;
 }
 
-fieldset{
+fieldset {
   background-color: var(--color-gtea);
   margin: 0rem 0.5rem 0.5rem 0rem;
   border: 0;
@@ -231,7 +234,9 @@ https://www.youtube.com/watch?v=sSF0bXFUFGM
   border: 5px solid var(--color-darkgrey);
 }
 
-/* code from 
+/* 
+Image hover
+code from 
 https://codepen.io/nxworld/pen/ZYNOBZ
 */
 
@@ -392,11 +397,6 @@ header{
 }
 
 /* 
-  TEXT ELEMENTS -------------------
-*/
-
-
-/* 
   COMBINED ELEMENTS -------------------
 */
 
@@ -415,7 +415,8 @@ header{
   margin-left: 2rem;
 }
 
-/*https://www.youtube.com/watch?v=R-1Hh--SrX0*/
+/* Custom Drop down menu
+https://www.youtube.com/watch?v=R-1Hh--SrX0*/
 select {
   appearance: none;
   outline: 0%;
@@ -452,7 +453,6 @@ select {
 }
 
 
-
 .select::after {
   content: '\25BC';
   position: absolute;
@@ -487,6 +487,12 @@ select {
   margin-left: 10px;
 }
 
+.right-side-checkout{
+  flex: 30%;
+  margin-left: auto;
+  float: right;
+}
+
 .total {
   flex: 25%;
   margin: 10px;
@@ -510,6 +516,55 @@ select {
   display: flex;
   justify-content: space-between;
 }
+
+.cart-page{
+  width: 65%;
+  margin: 3rem 1rem auto 1rem ;
+}
+
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th{
+  text-align: left;
+  padding: 0.5rem;
+  background: var(--color-gtea);
+}
+
+td{
+  padding: 1rem 0.5rem;
+}
+
+td input{
+  width:2rem;
+}
+
+td img{
+  width: 9rem;
+  height: 9rem;
+  margin-right: 0.5rem;
+  object-fit: cover;
+}
+
+/* banner thing */
+.banner {
+  padding: 1rem;
+  margin: 0 -1rem 0 -1rem;
+  background-color: var(--color-lilac);
+  text-align: center;
+}
+
+.banner .nunito {
+  opacity: 0.8;
+}
+
 
 /* 
 Branding ideas
@@ -567,3 +622,4 @@ Branding ideas
   background-color: white;
 
 }
+
