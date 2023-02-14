@@ -14,6 +14,10 @@
 
 body {
   font-family: 'Nunito', sans-serif;
+  margin:0;
+}
+
+#content{
   padding: 2rem;
 }
 
@@ -177,6 +181,8 @@ form label {
 fieldset{
   background-color: var(--color-gtea);
   margin: 0rem 0.5rem 0.5rem 0rem;
+  border: 0;
+  border-radius: 0.8em;
 }
 
 
@@ -281,6 +287,109 @@ div.list div:before {
   color: var(--color-darkgrey);
 }
 
+/*slideshow
+SRC https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+.slideshow{
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  text-align: center;
+  background-color: var(--color-lavender);
+}
+
+.slide{
+  height: 100%;
+  width: 100%;
+}
+
+.slide > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide_caption{
+  text-shadow: var(--color-darkgrey) 1px 0 10px;
+  color: var(--color-lilac);
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.dot{
+  height: 1rem;
+  width: 1rem;
+  margin: 0.2rem;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--color-lilac);
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.dot_active{
+  background-color: var(--color-darkgrey);
+}
+
+/*-----------------Main Nav------------------*/
+
+header{
+  background-color: var(--color-lavender);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.nav-main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+  background-color: inherit;
+}
+
+.nav-main > .button-nav{
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 650px){
+  header{
+    flex-direction: column;
+  }
+
+  #header-title{
+    margin: auto;
+  }
+
+  .nav-main{
+    margin: auto;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+.button-nav {
+  display: inline-block;
+  padding: 0.7rem;
+  color: var(--color-darkgrey);
+  background-color: var(--color-lilac);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  margin: 0.5rem;
+  border-radius: .8rem;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: var(--color-cherry);
+  color: var(--color-darkgrey);
+}
 
 /* 
   TEXT ELEMENTS -------------------
