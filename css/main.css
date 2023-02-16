@@ -489,7 +489,7 @@ select {
   border: 0 !important;
   background: white;
   background-image: none;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 select::-ms-expand {
@@ -499,8 +499,8 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 20em;
-  height: 3em;
+  width: 8rem;
+  height: 2em;
   line-height: 3;
   background: white;
   overflow: hidden;
@@ -520,9 +520,9 @@ select {
 .select::after {
   content: '\25BC';
   position: absolute;
-  top: 0;
+  top: -0.5rem;
   right: 0;
-  padding: 0 1em;
+  padding: 0 0.5em;
   background: white;
   cursor: pointer;
   pointer-events: none;
