@@ -66,7 +66,6 @@
 }
 
 
-
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
@@ -124,6 +123,10 @@ h5 {
 NAVIGATION BAR 
 https://www.w3schools.com/howto/howto_js_topnav.asp
 */
+
+#header-title{
+  margin-left: 2rem;
+}
 
 nav {
   background-color: var(--color-lavender);

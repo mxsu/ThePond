@@ -3,157 +3,173 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <title>Browse</title>
+  <meta charset="utf-8">
+  <title>Browse</title>
 
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/grids.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=nunswap');
-    </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&display=nunswap');
+  </style>
 
-     <header>
-        <h1 id="header-title">Site Title</h1>
-        <nav class="nav-main">
-          <a class="button-nav" href="home.html">Home</a>
-          <a class="button-nav" href="index.html">Style Guide</a>
-          <a class="button-nav" href="browse.html">Products</a>
-          <a class="button-nav" href="product-detail.html">Product detailed view</a>
-          <a class="button-nav" href="cart.html">Checkout</a>
-        </nav>
-      </header>
+  <header>
+    <h1 id="header-title">Site Title</h1>
+    <nav class="nav-main">
+      <a class="button-nav" href="home.html">Home</a>
+      <a class="button-nav" href="index.html">Style Guide</a>
+      <a class="button-nav" href="browse.html">Products</a>
+      <a class="button-nav" href="product-detail.html">Product detailed view</a>
+      <a class="button-nav" href="cart.html">Checkout</a>
+    </nav>
+  </header>
 
 </head>
 
 <body>
-
-    <div id="content">
-        <div class="product-page">
-            <div class="product-sidebar">
-                <section class="element" id="checkout">
-                    <h3>Search</h3>
-                    <form>
-                      <fieldset>
-                        <legend>Search:</legend>
-                        <label for="term">Term:</label>
-                        <input type="text" id="term" name="term" placeholder="Aliens"><br>
-                      </fieldset>
-
-                      <fieldset>
-                        <legend>Filter:</legend>
-                        <label for="size">Size:</label>
-                        <select id="size" name="size">
-                          <option value="s">Small</option>
-                          <option value="m">Medium</option>
-                          <option value="l">Large</option>
-                          <option value="xl">XL</option>
-                        </select><br>
-          
-                        <label for="province">Colour:</label>
-                        <select id="province" name="province">
-                          <option value="bl">Black</option>
-                          <option value="wh">White</option>
-                        </select><br>
-                        <label for="sort">Sort:</label>
-                        <div class="sort">
-                          <div class="select">
-                            <select>
-                              <option value="0">Sort by Newest</option>
-                              <option value="1">Sort by Best Selling</option>
-                              <option value="2">Sort by alphabetically, a-z</option>
-                              <option value="3">Sort by alphabetically, z-a</option>
-                              <option value="4">Sort by price, low to high</option>
-                              <option value="5">Sort by price, high to low</option>
-                            </select>
-                          </div>
-                          <label for="Categories">Categories:</label>
-                          <div class="select">
-                            <select>
-                              <option selected disabled>Categories</option>
-                              <option value="0">Apparel</option>
-                              <option value="1">Enamel Pins</option>
-                              <option value="2">Stickers</option>
-                              <option value="3">Tote Bags</option>
-                            </select>
-                          </div>
-                        </div>
-                      </fieldset>
-                      <input type="submit" value="Search" class="button-submit">
-                    </form>
-                  </section>
-            </div>
-
-            <div class="product-content">
-                <section class="element" id="product_listing">
-                    <h3>Shirts</h3>
-                    <div class="product-grid-browse">
-                      <div class="product-item">
-                        <figure class="imagelink">
-                          <a href="https://www.google.ca/">
-                            <div class="zoomimage"><img src="images/graphic tshirt.jpg" alt="An image of a stack of shirts."></div>
-                          </a>
-                          <br>
-                          <figcaption>Face This - Jon Burgerman x Kartini. <a href="https://www.digitalartsonline.co.uk/features/illustration/best-places-buy-graphic-t-shirts-2019/">Source.</a></figcaption>
-                          <h2>$24.99</h2>
-                        </figure>
-                      </div>
-                      <div class="product-item">
-                        <figure class="imagelink">
-                          <a href="https://www.google.ca/">
-                            <div class="zoomimage"><img src="images/Waterbottle2.png" alt="An image of a water bottle."></div>
-                          </a>
-                          <br>
-                          <figcaption>Black Water Bottle - "Maple"</figcaption>
-                          <h2>$19.99</h2>
-                        </figure>
-                      </div>
-                      <div class="product-item">
-                        <figure class="imagelink">
-                          <a href="https://www.google.ca/">
-                            <div class="zoomimage"><img src="images/graphic tshirt.jpg" alt="An image of a stack of shirts."></div>
-                          </a>
-                          <br>
-                          <figcaption>Face This - Jon Burgerman x Kartini. <a href="https://www.digitalartsonline.co.uk/features/illustration/best-places-buy-graphic-t-shirts-2019/">Source.</a></figcaption>
-                          <h2>$24.99</h2>
-                        </figure>
-                      </div>
-                      <div class="product-item">
-                        <figure class="imagelink">
-                          <a href="https://www.google.ca/">
-                            <div class="zoomimage"><img src="images/Waterbottle2.png" alt="An image of a water bottle."></div>
-                          </a>
-                          <br>
-                          <figcaption>Black Water Bottle - "Maple"</figcaption>
-                          <h2>$19.99</h2>
-                        </figure>
-                      </div>
-                      <div class="product-item">
-                        <figure class="imagelink">
-                          <a href="https://www.google.ca/">
-                            <div class="zoomimage"><img src="images/graphic tshirt.jpg" alt="An image of a stack of shirts."></div>
-                          </a>
-                          <br>
-                          <figcaption>Face This - Jon Burgerman x Kartini. <a href="https://www.digitalartsonline.co.uk/features/illustration/best-places-buy-graphic-t-shirts-2019/">Source.</a></figcaption>
-                          <h2>$24.99</h2>
-                        </figure>
-                      </div>
-                      <div class="product-item">
-                        <figure class="imagelink">
-                          <a href="https://www.google.ca/">
-                            <div class="zoomimage"><img src="images/Waterbottle2.png" alt="An image of a water bottle."></div>
-                          </a>
-                          <br>
-                          <figcaption>Black Water Bottle - "Maple"</figcaption>
-                          <h2>$19.99</h2>
-                        </figure>
-                      </div>
-                    </div>
-                  </section>
-            </div>
-        </div>
+  <section>
+    <div class="banner">
+      <h2 class="nunito"> Browse some products</h2>
     </div>
+  </section>
+  <div id="content">
+    <section class="product-page">
+      <div class="product-sidebar">
+        <section class="element" id="checkout">
+          <h3>Search</h3>
+          <form>
+            <fieldset>
+              <legend>Search:</legend>
+              <label for="term">Term:</label>
+              <input type="text" id="term" name="term" placeholder="Aliens"><br>
+            </fieldset>
+
+            <fieldset>
+              <legend>Filter:</legend>
+              <label for="size">Size:</label>
+              <div class="select">
+              <select id="size" name="size">
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+                <option value="xl">XL</option>
+              </select><br>
+            </div>
+
+              <label for="province">Colour:</label>
+              <select id="province" name="province">
+                <option value="bl">Black</option>
+                <option value="wh">White</option>
+              </select><br>
+              <label for="sort">Sort:</label>
+              <div class="sort">
+                <div class="select">
+                  <select>
+                    <option value="0">Sort by Newest</option>
+                    <option value="1">Sort by Best Selling</option>
+                    <option value="2">Sort by alphabetically, a-z</option>
+                    <option value="3">Sort by alphabetically, z-a</option>
+                    <option value="4">Sort by price, low to high</option>
+                    <option value="5">Sort by price, high to low</option>
+                  </select>
+                </div>
+                
+                <label for="Categories">Categories:</label>
+                <div class="select">
+                  <select>
+                    <option selected disabled>Categories</option>
+                    <option value="0">Apparel</option>
+                    <option value="1">Enamel Pins</option>
+                    <option value="2">Stickers</option>
+                    <option value="3">Tote Bags</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+            <input type="submit" value="Search" class="button-submit">
+          </form>
+        </section>
+      </div>
+
+      <div class="product-content">
+        <section class="element" id="product_listing">
+          <h3>Shirts</h3>
+          <div class="product-grid-browse">
+            <div class="product-item">
+              <figure class="imagelink">
+                <a href="https://www.google.ca/">
+                  <div class="zoomimage"><img src="images/graphic tshirt.jpg" alt="An image of a stack of shirts.">
+                  </div>
+                </a>
+                <br>
+                <figcaption>Face This - Jon Burgerman x Kartini. <a
+                    href="https://www.digitalartsonline.co.uk/features/illustration/best-places-buy-graphic-t-shirts-2019/">Source.</a>
+                </figcaption>
+                <h2>$24.99</h2>
+              </figure>
+            </div>
+            <div class="product-item">
+              <figure class="imagelink">
+                <a href="https://www.google.ca/">
+                  <div class="zoomimage"><img src="images/Waterbottle2.png" alt="An image of a water bottle."></div>
+                </a>
+                <br>
+                <figcaption>Black Water Bottle - "Maple"</figcaption>
+                <h2>$19.99</h2>
+              </figure>
+            </div>
+            <div class="product-item">
+              <figure class="imagelink">
+                <a href="https://www.google.ca/">
+                  <div class="zoomimage"><img src="images/graphic tshirt.jpg" alt="An image of a stack of shirts.">
+                  </div>
+                </a>
+                <br>
+                <figcaption>Face This - Jon Burgerman x Kartini. <a
+                    href="https://www.digitalartsonline.co.uk/features/illustration/best-places-buy-graphic-t-shirts-2019/">Source.</a>
+                </figcaption>
+                <h2>$24.99</h2>
+              </figure>
+            </div>
+            <div class="product-item">
+              <figure class="imagelink">
+                <a href="https://www.google.ca/">
+                  <div class="zoomimage"><img src="images/Waterbottle2.png" alt="An image of a water bottle."></div>
+                </a>
+                <br>
+                <figcaption>Black Water Bottle - "Maple"</figcaption>
+                <h2>$19.99</h2>
+              </figure>
+            </div>
+            <div class="product-item">
+              <figure class="imagelink">
+                <a href="https://www.google.ca/">
+                  <div class="zoomimage"><img src="images/graphic tshirt.jpg" alt="An image of a stack of shirts.">
+                  </div>
+                </a>
+                <br>
+                <figcaption>Face This - Jon Burgerman x Kartini. <a
+                    href="https://www.digitalartsonline.co.uk/features/illustration/best-places-buy-graphic-t-shirts-2019/">Source.</a>
+                </figcaption>
+                <h2>$24.99</h2>
+              </figure>
+            </div>
+            <div class="product-item">
+              <figure class="imagelink">
+                <a href="https://www.google.ca/">
+                  <div class="zoomimage"><img src="images/Waterbottle2.png" alt="An image of a water bottle."></div>
+                </a>
+                <br>
+                <figcaption>Black Water Bottle - "Maple"</figcaption>
+                <h2>$19.99</h2>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
 
 </body>
 

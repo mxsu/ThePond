@@ -9,6 +9,11 @@ header{
   padding: 0.5rem;
 }
 
+.page-layout{
+margin-left: 10%;
+margin-right: 10%;
+}
+
 .nav-main{
   display: flex;
   flex-direction: row;
@@ -50,7 +55,7 @@ header{
     flex-direction: column;
   }
   .product-sidebar{
-    order: 2;
+    order: 1;
   }
 }
 
