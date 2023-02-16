@@ -1,11 +1,15 @@
 .product-page {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.product-page .product {
-  box-sizing: border-box;
-  flex-basis: 15em;
+@media (max-width: 900px){
+  .product-page{
+    flex-direction: column;
+  }
+  .product-sidebar{
+    order: 2;
+  }
 }
 
 .container {
