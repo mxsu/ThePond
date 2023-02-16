@@ -13,13 +13,16 @@
         @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=nunswap');
     </style>
-    <nav>
-        <a href="#Home">Home</a>
-        <a href="#Shop">Shop</a>
-        <a href="#Cart">Cart</a>
-        <a href="#Contact">Contact</a>
-        <a href="#About">About</a>
+   <header>
+    <h1 id="header-title">Site Title</h1>
+    <nav class="nav-main">
+      <a class="button-nav" href="home.html">Home</a>
+      <a class="button-nav" href="index.html">Style Guide</a>
+      <a class="button-nav" href="browse.html">Products</a>
+      <a class="button-nav" href="product-detail.html">Product detailed view</a>
+      <a class="button-nav" href="cart.html">Checkout</a>
     </nav>
+  </header>
 </head>
 
 <body>
@@ -109,19 +112,23 @@
                     <fieldset>
                         <legend>Payment</legend>
                         <label for="ccnum">Credit card number</label>
-                        <input type="number" name="ccnum">
+                        <input type="text" name="ccnum">
                         <label for="ccv">CCV:</label>
-                        <input type="number" name="ccv">
-                    </fieldset>
+                        <input type="text" name="ccv">
+                      </fieldset>
+                      <fieldset>
+                        <legend>Payment Method</legend>
+                        <div class="container">
+                          <input class="input" type="radio" id="Paypal2" name="checkout-info">
+                          <label for="Paypal2">Paypal</label>
+                          <input type="radio" id="Visa2" name="checkout-info">
+                          <label for="Visa2">Visa</label>
+                          <input type="radio" id="Interac2" name="checkout-info">
+                          <label for="Interac2">Interac</label>
+                        </div>
+                      </fieldset>
                 </form>
-                <div class="container">
-                    <input class="input" type="radio" id="Paypal2" name="checkout-info">
-                    <label for="Paypal2">Paypal</label>
-                    <input type="radio" id="Visa2" name="checkout-info">
-                    <label for="Visa2">Visa</label>
-                    <input type="radio" id="Interac2" name="checkout-info">
-                    <label for="Interac2">Interac</label>
-                </div>
+                
             </div>
         </div>
     </section>
