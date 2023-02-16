@@ -324,6 +324,22 @@ figure img:hover {
   transform: scale(1.2);
 }
 
+/*NEW image zoom - Stephen's version, it should fix overflow issues hopefully*/
+.zoomimage{
+  overflow: hidden;
+}
+
+.zoomimage img{
+  transition-property: scale; 
+  transition-duration: 0.5s;
+  width:100%;
+  height:100%;
+}
+
+.zoomimage img:hover{
+  scale: 1.9;
+}
+
 /* Numbered list
 https://blog.logrocket.com/styling-numbered-lists-with-css-counters/
 */
@@ -357,7 +373,7 @@ div.list div:before {
 SRC https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 .slideshow {
   width: 100%;
-  height: 20rem;
+  height: 25rem;
   position: relative;
   text-align: center;
   background-color: var(--color-lavender);
@@ -374,9 +390,9 @@ SRC https://www.w3schools.com/howto/howto_js_slideshow.asp*/
   object-fit: cover;
 }
 
-.slide_caption {
-  text-shadow: var(--color-darkgrey) 1px 0 10px;
-  color: var(--color-lilac);
+.slide_caption{
+  text-shadow: black 1px 0 10px;
+  color: white;
   position: absolute;
   bottom: 1rem;
   width: 100%;
@@ -435,6 +451,33 @@ SRC https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 .product h5 {
   margin-top: 0.5em;
   margin-left: 2rem;
+}
+
+/*NEW product listing - Stephen : allows for flexible layout and no hardcoded values*/
+
+.product-grid-browse{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+@media (max-width: 1000px){
+  .product-grid-browse{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 650px){
+  .imagelink{
+    margin: 0rem 0.25rem 0.25rem 0.25rem;
+  }
+}
+
+.product-item{
+  margin: 1rem;
+  background-color: var(--color-lilac);
+  padding: 1rem;
+  border-radius: 0.8em;
 }
 
 /* Custom Drop down menu
