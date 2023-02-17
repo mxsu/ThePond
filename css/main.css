@@ -685,3 +685,24 @@ Branding ideas
   width: auto;
   border-radius: 50%;
 }
+
+.about-us{
+  padding: 1rem;
+  background-color: var(--color-lilac);
+  border-radius: 0.7rem;
+  margin: 1rem;
+  height: fit-content;
+}
+
+.contact-us{
+  padding: 1rem;
+  background-color: var(--color-gtea);
+  border-radius: 0.7rem;
+  margin: 1rem;
+  height: fit-content;
+}
+
+.contact-us #contact-message{
+  height: 10rem;
+  width:80%;
+}

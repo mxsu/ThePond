@@ -168,3 +168,17 @@ table{
   flex-wrap: nowrap;
   flex-direction: row;
 }
+
+.about-page-container{
+  margin: 3rem 10% 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.about-us {
+  flex: 40%;
+}
+.contact-us {
+  flex:40%;
+}
