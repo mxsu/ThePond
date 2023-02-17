@@ -663,3 +663,25 @@ Branding ideas
 .detail-right input {
   width: 4rem;
 }
+
+.product-review{
+  padding: 1rem;
+  background-color: var(--color-lilac);
+  border-radius: 0.7rem;
+  margin: 1rem;
+  height: fit-content;
+}
+
+.product-review input {
+  height: 3rem;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.customer-pfp{
+  margin-top: 1rem;
+  margin-right: 1rem;
+  height:2rem;
+  width: auto;
+  border-radius: 50%;
+}

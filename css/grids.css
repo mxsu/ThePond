@@ -85,6 +85,8 @@ might need to change it for better naming*/
 }
 
 .checkout-layout {
+  margin-left: 10%;
+  margin-right: 10%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -92,7 +94,7 @@ might need to change it for better naming*/
 
 /* right side of the checkout with totals, checkout info */
 .right-side-checkout{
-  flex: 33%;
+  flex: 35%;
   margin-top: 1rem;
   margin-right: 1rem;
   margin-left: auto;
@@ -106,7 +108,7 @@ might need to change it for better naming*/
 }
 
 .cart-page{
-  width: 60%;
+  width: 55%;
   margin: 2rem 1rem auto 1rem ;
   flex-grow: 1;
 }
@@ -143,12 +145,26 @@ table{
   overflow: hidden;
 }
 
-
-
 .detail-right{
   flex:35%;
   flex-grow: 1;
   margin-left: 1rem;
   margin-right: 1rem;
   float: right;
+  
+}
+
+.detail-right-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.customer-flex{
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
