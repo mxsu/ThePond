@@ -167,6 +167,13 @@ code {
   display: block;
 }
 
+footer{
+  background-color: var(--color-lavender);
+  color: var(--color-darkgrey);
+  text-align: center;
+  padding: 1rem;
+}
+
 
 /* 
   INTERACTIVE ELEMENTS -------------------
