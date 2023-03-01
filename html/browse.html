@@ -14,16 +14,16 @@
     @import url('https://fonts.googleapis.com/css2?family=Nunito&display=nunswap');
   </style>
 
-<header>
-  <h1 id="header-title">The Pond</h1>
-  <nav class="nav-main">
-    <a class="button-nav" href="home.html">Home</a>
-    <a class="button-nav" href="about.html">About/Contact Us</a>
-    <a class="button-nav" href="index.html">Style Guide</a>
-    <a class="button-nav" href="browse.html">Products</a>
-    <a class="button-nav" href="cart.html">Checkout</a>
-  </nav>
-</header>
+  <header>
+    <h1 id="header-title">The Pond</h1>
+    <nav class="nav-main">
+      <a class="button-nav" href="home.html">Home</a>
+      <a class="button-nav" href="about.html">About/Contact Us</a>
+      <a class="button-nav" href="index.html">Style Guide</a>
+      <a class="button-nav" href="browse.html">Products</a>
+      <a class="button-nav" href="cart.html">Checkout</a>
+    </nav>
+  </header>
 
 </head>
 
@@ -47,47 +47,65 @@
 
             <fieldset>
               <legend>Filter:</legend>
-              <label for="size">Size:</label>
-              <div class="select">
-              <select id="size" name="size">
-                <option value="s">Small</option>
-                <option value="m">Medium</option>
-                <option value="l">Large</option>
-                <option value="xl">XL</option>
-              </select><br>
-            </div>
-
-              <label for="province">Colour:</label>
-              <select id="province" name="province">
-                <option value="bl">Black</option>
-                <option value="wh">White</option>
-              </select><br>
-              <label for="sort">Sort:</label>
-              <div class="sort">
+              <div>
+                <label for="size">Size:</label>
+                <div class="sort">
                 <div class="select">
-                  <select>
-                    <option value="0">Sort by Newest</option>
-                    <option value="1">Sort by Best Selling</option>
-                    <option value="2">Sort by alphabetically, a-z</option>
-                    <option value="3">Sort by alphabetically, z-a</option>
-                    <option value="4">Sort by price, low to high</option>
-                    <option value="5">Sort by price, high to low</option>
-                  </select>
-                </div>
-                
-                <label for="Categories">Categories:</label>
-                <div class="select">
-                  <select>
-                    <option selected disabled>Categories</option>
-                    <option value="0">Apparel</option>
-                    <option value="1">Enamel Pins</option>
-                    <option value="2">Stickers</option>
-                    <option value="3">Tote Bags</option>
-                  </select>
+                  <select id="size" name="size">
+                    <option value="s">Small</option>
+                    <option value="m">Medium</option>
+                    <option value="l">Large</option>
+                    <option value="xl">XL</option>
+                  </select><br>
                 </div>
               </div>
+              <div>
+                <label for="sort">Colour:</label>
+                <div class="sort">
+                  <div class="select">
+                    <select>
+                      <option value="0">Black</option>
+                      <option value="1">White</option>
+                      <option value="2">Green</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label for="sort">Sort:</label>
+                <div class="sort">
+                  <div class="select">
+                    <select>
+                      <option value="0">Sort by Newest</option>
+                      <option value="1">Sort by Best Selling</option>
+                      <option value="2">Sort by alphabetically, a-z</option>
+                      <option value="3">Sort by alphabetically, z-a</option>
+                      <option value="4">Sort by price, low to high</option>
+                      <option value="5">Sort by price, high to low</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+                <div>
+                  <label for="Categories">Categories:</label>
+                  <div class="sort">
+                  <div class="select">
+                    <select>
+                      <option selected disabled>Categories</option>
+                      <option value="0">Apparel</option>
+                      <option value="1">Enamel Pins</option>
+                      <option value="2">Stickers</option>
+                      <option value="3">Tote Bags</option>
+                    </select>
+                  </div>
+                </div>
+                </div>
+                <br>
+                <button class="button">Submit</button>
             </fieldset>
-            <input type="submit" value="Search" class="button-submit">
+            <!--<input type="submit" value="Search" class="button-submit">
+            -->
+
           </form>
         </section>
       </div>
