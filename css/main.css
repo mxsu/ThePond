@@ -657,10 +657,19 @@ Branding ideas
   width: 100%;
 }
 
+.detail-left-slide{
+  width: auto;
+  height: max-content;
+  overflow: hidden;
+}
+
+
+
 .detail-left-slide img{
-  height: auto;
-  margin: 0.5rem 0.3rem 0.5rem 0.3rem;
   width: 25%;
+  margin: 0.5rem 0.3rem 0.5rem 0.3rem;
+  height: auto;
+  object-fit: contain;
 }
 
 .detail-right {
@@ -725,4 +734,38 @@ Branding ideas
 .contact-us #contact-message{
   height: 10rem;
   width:85%;
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rangeslider
+*/
+
+.slider-container {
+  width: 100%;
+}
+
+input.slider {
+  appearance: none;
+  width: 90%;
+  height: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: var(--color-gtea);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--color-matcha);
+  cursor: pointer;
 }
