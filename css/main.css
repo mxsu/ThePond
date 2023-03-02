@@ -337,17 +337,19 @@ figure img:hover {
 /*NEW image zoom - Stephen's version, it should fix overflow issues hopefully*/
 .zoomimage{
   overflow: hidden;
+  height: 20rem;
+  width: 20rem;
 }
 
 .zoomimage img{
-  transition-property: scale; 
-  transition-duration: 0.5s;
+  transition: scale 1s;
+  object-fit: cover;
   width:100%;
   height:100%;
 }
 
 .zoomimage img:hover{
-  scale: 1.9;
+  scale: 1.4;
 }
 
 /* Numbered list
@@ -442,6 +444,30 @@ SRC https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 .button-nav:focus {
   background-color: var(--color-cherry);
   color: var(--color-darkgrey);
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 1rem;
+  color: white;
+  background-color: rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.prev{
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+  background-color: rgba(0,0,0,0.5)
 }
 
 /* 
