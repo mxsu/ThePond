@@ -606,8 +606,8 @@ legend {
 
 .total {
   margin-bottom: 1rem;
-  padding: 1rem;
-  height: 200px;
+  padding: 1rem 1rem 1rem 1rem;
+  height: 120px;
   border-radius: .7rem;
   background-color: var(--color-gtea);
   font-weight: 700;
@@ -658,7 +658,7 @@ td img {
 /* banner thing */
 .banner {
   padding: 0.5rem;
-  margin: 0 -1rem 0 -1rem;
+  margin: 0 0 0 0rem;
   background-color: var(--color-lilac);
   text-align: center;
 }
@@ -759,7 +759,16 @@ Branding ideas
 }
 
 .contact-us #contact-message{
-  height: 10rem;
+  font-family: 'Nunito', sans-serif;
+  padding: 0.5em;
+  margin: .3em;
+  display: inline-block;
+  border-radius: 0.8em;
+  border: 2px solid #2d2d2d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  margin-bottom: 0.5rem;
   width:85%;
 }
 

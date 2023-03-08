@@ -8,6 +8,7 @@
 
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/grids.css" rel="stylesheet">
+    <script src="../functions.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
@@ -16,13 +17,13 @@
     <header>
         <h1 id="header-title">The Pond</h1>
         <nav class="nav-main">
-          <a class="button-nav" href="home.html">Home</a>
-          <a class="button-nav" href="about.html">About/Contact Us</a>
-          <a class="button-nav" href="index.html">Style Guide</a>
-          <a class="button-nav" href="browse.html">Products</a>
-          <a class="button-nav" href="cart.html">Checkout</a>
+            <a class="button-nav" href="home.html">Home</a>
+            <a class="button-nav" href="about.html">About/Contact Us</a>
+            <a class="button-nav" href="index.html">Style Guide</a>
+            <a class="button-nav" href="browse.html">Products</a>
+            <a class="button-nav" href="cart.html">Checkout</a>
         </nav>
-      </header>
+    </header>
 </head>
 
 <body>
@@ -92,11 +93,14 @@
         </div>
         <div class="right-side-checkout">
             <div class="total">
-                <p><span>Subtotal</span> <span>$90</span></p>
-                <p><span>Taxes </span> <span>$10.8 </span></p>
-                <p><span>Estimated Shipping </span> <span>$12</span></p>
-                <p><span>Total </span> <span>$112.80</span></p>
-                <button class="button checkout-button" >Checkout</button>
+                <div><span>Subtotal</span> <span>$90</span>
+                </div>
+                <div><span>Taxes </span> <span>$10.8 </span>
+                </div>
+                <div><span>Shipping </span> <span>$12</span>
+                </div>
+                <div><span>Total </span> <span>$112.80</span>
+                </div>
             </div>
             <form class="payment-form">
                 <fieldset>
@@ -127,7 +131,7 @@
                         <input type="radio" id="Interac2" name="payment-method">
                         <label for="Interac2">Interac</label>
                     </div>
-                    <button class="button checkout-button">Submit</button>
+                    <button class="button checkout-button" onclick="alertBox()">Purchase</button>
                 </fieldset>
             </form>
         </div>
@@ -136,7 +140,7 @@
     <footer>
         By Michael Su and Stephen Kerschbaumer (Team 11) for IAT 339
         <br>2023
-      </footer>
+    </footer>
 </body>
 
 </html>

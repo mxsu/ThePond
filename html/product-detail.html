@@ -8,7 +8,8 @@
 
   <link href="../css/main.css" rel="stylesheet">
   <link href="../css/grids.css" rel="stylesheet">
-
+  <script src="../functions.js"></script>
+  
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nunito&display=nunswap');
@@ -56,19 +57,20 @@
             <br>
             <input type="number" name="quantity" value="1">
             <br>
-            <button class="button">Add to cart</button>
+            <button class="button" onclick="changeText()" id="addToCart" value="0">Add to cart</button>
             <button id="to-checkout" class="button" onclick="location.href='cart.html'">To Checkout</button>
       </div>
       <div class="product-review">
         <label for="review">Leave a review:</label>
         <br>
         <input type="text" id="review" name="review">
-        <label for="review">Rate us!:</label>
+        <label for="review" id="rating">Rate us!:</label>
         <div class="slider-container">
-          <input type="range" class="slider" min="1" max="10" value="5" class="slider" id="myRange">
+          <input type="range" class="slider" min="1" max="10" value="5" class="slider" id="rating-slider"
+          onchange="rateSlider()">
         </div>
     
-        <button class="button">Submit</button>
+        <button class="button" onclick="thankYouAlert()">Submit</button>
         <div class="customer-review element">
           <h3>5 Stars</h3>
           <h3>So cute! I love frogs!</h3>
