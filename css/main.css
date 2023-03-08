@@ -806,3 +806,16 @@ input.slider {
   cursor: pointer;
 }
 
+.logo {
+  padding-left: 12%;
+  height: 80px;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 640px) {
+  .logo {
+    margin: auto;
+    height: 60px;
+    width: auto;
+  }
+}
