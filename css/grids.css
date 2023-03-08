@@ -183,3 +183,11 @@ table{
 .contact-us {
   flex:40%;
 }
+
+.footer-layout{
+  flex: 30%;
+}
+.footer-content{
+  flex:70%;
+  float: right;
+}
