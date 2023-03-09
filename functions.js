@@ -1,5 +1,5 @@
 function alertBox() {
-  alert("I am an alert box!");
+  alert("Thank you for your purchase!");
 }
 
 function changeText() {
