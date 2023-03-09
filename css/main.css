@@ -62,7 +62,6 @@
 
 .palettes #white {
   background-color: white;
-
 }
 
 
@@ -174,6 +173,10 @@ footer{
   padding: 1rem;
 }
 
+/*Narrow ul styling*/
+.centered-list{
+  padding: 0.5rem;
+}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -490,33 +493,6 @@ SRC https://www.w3schools.com/howto/howto_js_slideshow.asp*/
   margin-left: 2rem;
 }
 
-/*NEW product listing - Stephen : allows for flexible layout and no hardcoded values*/
-
-.product-grid-browse{
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-@media (max-width: 1000px){
-  .product-grid-browse{
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-}
-
-@media (max-width: 650px){
-  .imagelink{
-    margin: 0rem 0.25rem 0.25rem 0.25rem;
-  }
-}
-
-.product-item{
-  margin: 1rem;
-  background-color: var(--color-lilac);
-  padding: 1rem;
-  border-radius: 0.8em;
-}
-
 /* Custom Drop down menu
 https://www.youtube.com/watch?v=R-1Hh--SrX0*/
 select {
@@ -809,11 +785,12 @@ input.slider {
 .logo {
   padding-left: 12%;
   height: 80px;
-  width: fit-content;
+  width: auto;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 655px) {
   .logo {
+    padding: 0;
     margin: auto;
     height: 60px;
     width: auto;
