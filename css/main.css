@@ -752,7 +752,7 @@ Branding ideas
   height: fit-content;
 }
 
-.contact-us #contact-message{
+.contact-us #contact-message, #review{
   font-family: 'Nunito', sans-serif;
   padding: 0.5em;
   margin: .3em;
@@ -764,6 +764,10 @@ Branding ideas
   outline: none;
   margin-bottom: 0.5rem;
   width:85%;
+}
+
+#review{
+  width: 90%;
 }
 
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rangeslider
@@ -806,3 +810,10 @@ input.slider {
   padding-left: 2rem;
 }
 
+#art-direction{
+  margin: 2rem;
+}
+
+#citations{
+  margin: 2rem;
+}

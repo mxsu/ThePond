@@ -34,8 +34,8 @@
       <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
       <a class="button-nav" href="#text_elements">Text Elements</a>
       <a class="button-nav" href="#combined_elements">Combined Elements</a>
-      <a class="button-nav" href="product_listing.html">Product Listing Template</a>
-      <a class="button-nav" href="checkout.html">Checkout Template</a>
+      <a class="button-nav" href="#product_listing">Product Listing Template</a>
+      <a class="button-nav" href="#checkout">Checkout Template</a>
       <a class="button-nav" href="#citations">Citations</a>
     </nav>
 
@@ -169,7 +169,8 @@
 
           <div>
             <figure>
-              <img src="https://i.etsystatic.com/13486711/r/il/245393/3720451436/il_794xN.3720451436_l0t2.jpg" alt="Frog sticker sheet">
+              <img src="https://i.etsystatic.com/13486711/r/il/245393/3720451436/il_794xN.3720451436_l0t2.jpg"
+                alt="Frog sticker sheet">
             </figure>
           </div>
         </a>
@@ -180,7 +181,8 @@
     <div class="slideshow">
       <div class="slide">
         <!--https://i.etsystatic.com/25543253/r/il/475077/3419491114/il_794xN.3419491114_cfr3.jpg-->
-        <img src="https://i.etsystatic.com/25543253/r/il/475077/3419491114/il_794xN.3419491114_cfr3.jpg" alt="a frog shirt">
+        <img src="https://i.etsystatic.com/25543253/r/il/475077/3419491114/il_794xN.3419491114_cfr3.jpg"
+          alt="a frog shirt">
         <div class="slide_caption">Check-out our new shirt collection!</div>
       </div>
       <div class="slide">
@@ -193,8 +195,8 @@
         <img src="../images/forest.jpg" alt="The amazon rainforest">
         <div class="slide_caption">Read about how we're helping the environment, one shirt at a time.</div>
       </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
       <div class="dots">
         <a class="dot" onclick="currentSlide(1)"></a>
         <a class="dot" onclick="currentSlide(2)"></a>
@@ -292,12 +294,14 @@
       <section class="element">
         <h3>Main Navigation</h3>
         <h1 id="header-title">Site Title</h1>
-        <nav>
-          <a class="button-nav" href="home.html">Home</a>
-          <a class="button-nav" href="index.html">Style Guide</a>
-          <a class="button-nav" href="browse.html">Products</a>
-          <a class="button-nav" href="cart.html">Checkout</a>
-        </nav>
+        <header>
+          <a href="home.html"><img src="../images/the-pond-logo.png" class="logo" alt="The Pond logo"></a>
+          <nav class="nav-main">
+            <a class="button-nav" href="about.html">About/Contact Us</a>
+            <a class="button-nav" href="browse.html">Products</a>
+            <a class="button-nav" href="cart.html">Checkout</a>
+          </nav>
+        </header>
 
       </section>
 
@@ -318,51 +322,72 @@
                     <label for="term">Term:</label>
                     <input type="text" id="term" name="term" placeholder="Aliens"><br>
                   </fieldset>
-      
+
                   <fieldset>
                     <legend>Filter:</legend>
-                    <label for="size">Size:</label>
-                    <select id="size" name="size">
-                      <option value="s">Small</option>
-                      <option value="m">Medium</option>
-                      <option value="l">Large</option>
-                      <option value="xl">XL</option>
-                    </select><br>
-      
-                    <label for="province">Colour:</label>
-                    <select id="province" name="province">
-                      <option value="bl">Black</option>
-                      <option value="wh">White</option>
-                    </select><br>
-                    <label for="sort">Sort:</label>
-                    <div class="sort">
-                      <div class="select">
-                        <select>
-                          <option value="0">Sort by Newest</option>
-                          <option value="1">Sort by Best Selling</option>
-                          <option value="2">Sort by alphabetically, a-z</option>
-                          <option value="3">Sort by alphabetically, z-a</option>
-                          <option value="4">Sort by price, low to high</option>
-                          <option value="5">Sort by price, high to low</option>
-                        </select>
+                    <div>
+                      <label for="size">Size:</label>
+                      <div class="sort">
+                        <div class="select">
+                          <select id="size" name="size">
+                            <option value="s">Small</option>
+                            <option value="m">Medium</option>
+                            <option value="l">Large</option>
+                            <option value="xl">XL</option>
+                          </select><br>
+                        </div>
                       </div>
-                      <label for="Categories">Categories:</label>
-                      <div class="select">
-                        <select>
-                          <option selected disabled>Categories</option>
-                          <option value="0">Apparel</option>
-                          <option value="1">Enamel Pins</option>
-                          <option value="2">Stickers</option>
-                          <option value="3">Tote Bags</option>
-                        </select>
+                      <div>
+                        <label for="sort">Colour:</label>
+                        <div class="sort">
+                          <div class="select">
+                            <select>
+                              <option value="0">Black</option>
+                              <option value="1">White</option>
+                              <option value="2">Green</option>
+                            </select>
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                      <div>
+                        <label for="sort">Sort:</label>
+                        <div class="sort">
+                          <div class="select">
+                            <select>
+                              <option value="0">Sort by Newest</option>
+                              <option value="1">Sort by Best Selling</option>
+                              <option value="2">Sort by alphabetically, a-z</option>
+                              <option value="3">Sort by alphabetically, z-a</option>
+                              <option value="4">Sort by price, low to high</option>
+                              <option value="5">Sort by price, high to low</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <label for="Categories">Categories:</label>
+                        <div class="sort">
+                          <div class="select">
+                            <select>
+                              <option selected disabled>Categories</option>
+                              <option value="0">Apparel</option>
+                              <option value="1">Enamel Pins</option>
+                              <option value="2">Stickers</option>
+                              <option value="3">Tote Bags</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <button class="button">Submit</button>
                   </fieldset>
-                  <input type="submit" value="Search" class="button-submit">
+                  <!--<input type="submit" value="Search" class="button-submit">
+                  -->
+
                 </form>
               </section>
             </div>
-      
+
             <div class="product-content">
               <section class="element" id="product_listing">
                 <h3>Shirts</h3>
@@ -370,7 +395,8 @@
                   <div class="product-item">
                     <figure class="imagelink">
                       <a href="https://www.google.ca/">
-                        <div class="zoomimage"><img src="../images/graphic tshirt.jpg" alt="An image of a graphic t-shirt.">
+                        <div class="zoomimage"><img src="../images/graphic tshirt.jpg"
+                            alt="An image of a graphic t-shirt.">
                         </div>
                       </a>
                       <br>
@@ -383,7 +409,8 @@
                   <div class="product-item">
                     <figure class="imagelink">
                       <a href="https://www.google.ca/">
-                        <div class="zoomimage"><img src="../images/Waterbottle2.png" alt="An image of a water bottle."></div>
+                        <div class="zoomimage"><img src="../images/Waterbottle2.png" alt="An image of a water bottle.">
+                        </div>
                       </a>
                       <br>
                       <figcaption>Black Water Bottle - "Maple"</figcaption>
@@ -393,7 +420,8 @@
                   <div class="product-item">
                     <figure class="imagelink">
                       <a href="https://www.google.ca/">
-                        <div class="zoomimage"><img src="../images/graphic tshirt.jpg" alt="An image of a graphic t-shirt.">
+                        <div class="zoomimage"><img src="../images/graphic tshirt.jpg"
+                            alt="An image of a graphic t-shirt.">
                         </div>
                       </a>
                       <br>
@@ -406,7 +434,8 @@
                   <div class="product-item">
                     <figure class="imagelink">
                       <a href="https://www.google.ca/">
-                        <div class="zoomimage"><img src="../images/Waterbottle2.png" alt="An image of a water bottle."></div>
+                        <div class="zoomimage"><img src="../images/Waterbottle2.png" alt="An image of a water bottle.">
+                        </div>
                       </a>
                       <br>
                       <figcaption>Black Water Bottle - "Maple"</figcaption>
@@ -416,7 +445,8 @@
                   <div class="product-item">
                     <figure class="imagelink">
                       <a href="https://www.google.ca/">
-                        <div class="zoomimage"><img src="../images/graphic tshirt.jpg" alt="An image of a graphic t-shirt.">
+                        <div class="zoomimage"><img src="../images/graphic tshirt.jpg"
+                            alt="An image of a graphic t-shirt.">
                         </div>
                       </a>
                       <br>
@@ -429,7 +459,8 @@
                   <div class="product-item">
                     <figure class="imagelink">
                       <a href="https://www.google.ca/">
-                        <div class="zoomimage"><img src="../images/Waterbottle2.png" alt="An image of a water bottle."></div>
+                        <div class="zoomimage"><img src="../images/Waterbottle2.png" alt="An image of a water bottle.">
+                        </div>
                       </a>
                       <br>
                       <figcaption>Black Water Bottle - "Maple"</figcaption>
@@ -453,161 +484,168 @@
         <form class="payment-form">
           <fieldset>
             <legend>Shipping</legend>
-            <label for="customer-name">Name:</label>
-            <input type="text" id="customer-name" name="shipping">
-            <label for="email">Email:</label>
-            <input type="email" id="checkout-email" name="shipping">
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="shipping">
+            <label for="customer-name2">Name:</label>
+            <input type="text" id="customer-name2" name="shipping">
+            <label for="email2">Email:</label>
+            <input type="email" id="email2" name="shipping">
+            <label for="address2">Address:</label>
+            <input type="text" id="address2" name="shipping">
+            <button class="button checkout-button">Next</button>
           </fieldset>
           <fieldset>
             <legend>Payment</legend>
             <label for="ccnum">Credit card number</label>
-            <input type="number" name="ccnum">
+            <input type="text" id="ccnum" name="ccnum">
             <label for="ccv">CCV:</label>
-            <input type="number" name="ccv">
+            <input type="text" id="ccv" name="ccv">
+            <button class="button checkout-button">Next</button>
+          </fieldset>
+          <fieldset>
+            <legend>Payment Method</legend>
+            <div class="container">
+              <input class="input" type="radio" id="Paypal2" name="payment-method">
+              <label for="Paypal2">Paypal</label>
+              <input type="radio" id="Visa2" name="payment-method">
+              <label for="Visa2">Visa</label>
+              <input type="radio" id="Interac2" name="payment-method">
+              <label for="Interac2">Interac</label>
+            </div>
+            <button type="submit" class="button checkout-button" formaction="shipping.html">Purchase</button>
           </fieldset>
         </form>
-        <br>
-        <div class="container">
-          <input class="input" type="radio" id="Paypal" name="payment">
-          <label for="Paypal">Paypal</label>
-          <input type="radio" id="Visa" name="payment">
-          <label for="Visa">Visa</label>
-          <input type="radio" id="Interac" name="payment">
-          <label for="Interac">Interac</label>
-        </div>
+  </div>
 
-      </section>
+  </section>
 
-      <section class="element">
+  <section class="element">
 
-        <section>
-          <div class="banner">
-              <h2 class="nunito"> review your cart</h2>
-          </div>
-      </section>
-      <section class="checkout-layout">
-          <div class="small-container cart-page">
-              <table>
-                  <tr>
-                      <th>Product</th>
-                      <th>Quantity</th>
-                      <th>Subtotal</th>
-                  </tr>
-                  <!--Table rows-->
-                  <tr>
-                      <td>
-                          <div class="cart-info">
-                              <img
-                                  src="https://i.etsystatic.com/13486711/r/il/245393/3720451436/il_1140xN.3720451436_l0t2.jpg" alt="Frog sticker sheet">
-                              <div>
-                                  <p>Frog Sticker Pack</p>
-                                  <h5>Price: $10</h5>
-                                  <button class="button">Remove</button>
-                              </div>
-                          </div>
-                      </td>
-                      <td><input type="number" value="1"></td>
-                      <td>$14.00</td>
-                  </tr>
-                  <tr>
-                      <td>
-                          <div class="cart-info">
-                              <img
-                                  src="https://i.etsystatic.com/25543253/r/il/475077/3419491114/il_794xN.3419491114_cfr3.jpg" alt="A frog shirt">
-                              <div>
-                                  <p>Froggy Tee</p>
-                                  <h5>Price: $20</h5>
-                                  <button class="button">Remove</button>
-                              </div>
-                          </div>
-                      </td>
-                      <td><input type="number" value="1"></td>
-                      <td>$20.00</td>
-                  </tr>
-  
-                  <tr>
-                      <td>
-                          <div class="cart-info">
-                              <img
-                                  src="https://i.etsystatic.com/13009824/r/il/0560ad/3378126283/il_794xN.3378126283_gqxt.jpg" alt="A pink enamel pin of a bird">
-                              <div>
-                                  <p>Cherry Blossom Bird Enamel Pin</p>
-                                  <h5>Price: $15</h5>
-                                  <button class="button">Remove</button>
-                              </div>
-                          </div>
-                      </td>
-                      <td><input type="number" value="1"></td>
-                      <td>$15.00</td>
-                  </tr>
-  
-              </table>
-          </div>
-          <div class="right-side-checkout">
-              <div class="total">
-                  <p><span>Subtotal</span> <span>$90</span></p>
-                  <p><span>Taxes </span> <span>$10.8 </span></p>
-                  <p><span>Estimated Shipping </span> <span>$12</span></p>
-                  <p><span>Total </span> <span>$112.80</span></p>
-                  <button class="button" id="checkout-button">Checkout</button>
+    <section class="checkout-layout">
+      <div class="small-container cart-page">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+          <!--Table rows-->
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="https://i.etsystatic.com/13486711/r/il/245393/3720451436/il_1140xN.3720451436_l0t2.jpg"
+                  alt="Frog sticker sheet">
+                <div class="cart-product-detail">
+                  <p>Frog Sticker Pack</p>
+                  <h5>Price: $10</h5>
+                  <button class="button">Remove</button>
+                </div>
               </div>
-              <form class="payment-form">
-                  <fieldset>
-                      <legend>Shipping</legend>
-                      <label for="customer-name2">Name:</label>
-                      <input type="text" id="customer-name2" name="shipping">
-                      <label for="email2">Email:</label>
-                      <input type="email" id="email2" name="shipping">
-                      <label for="address2">Address:</label>
-                      <input type="text" id="address2" name="shipping">
-                  </fieldset>
-                  <fieldset>
-                      <legend>Payment</legend>
-                      <label for="ccnum">Credit card number</label>
-                      <input type="text" id="ccnum" name="ccnum">
-                      <label for="ccv">CCV:</label>
-                      <input type="text" id="ccv" name="ccv">
-                  </fieldset>
-                  <fieldset>
-                      <legend>Payment Method</legend>
-                      <div class="container">
-                          <input class="input" type="radio" id="Paypal2" name="payment-method">
-                          <label for="Paypal2">Paypal</label>
-                          <input type="radio" id="Visa2" name="payment-method">
-                          <label for="Visa2">Visa</label>
-                          <input type="radio" id="Interac2" name="payment-method">
-                          <label for="Interac2">Interac</label>
-                      </div>
-                  </fieldset>
-              </form>
-  
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$10.00</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="https://i.etsystatic.com/25543253/r/il/475077/3419491114/il_794xN.3419491114_cfr3.jpg"
+                  alt="A frog shirt.">
+                <div class="cart-product-detail">
+                  <p>Froggy Tee</p>
+                  <h5>Price: $20</h5>
+                  <button class="button">Remove</button>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$20.00</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="https://i.etsystatic.com/13009824/r/il/0560ad/3378126283/il_794xN.3378126283_gqxt.jpg"
+                  alt="A pink bird enamel pin.">
+                <div class="cart-product-detail">
+                  <p>Cherry Blossom Bird Enamel Pin</p>
+                  <h5>Price: $15</h5>
+                  <button class="button">Remove</button>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$15.00</td>
+          </tr>
+
+        </table>
+      </div>
+      <div class="right-side-checkout">
+        <div class="total">
+          <div><span>Subtotal</span> <span>$90</span>
           </div>
-      </section>
-
+          <div><span>Taxes </span> <span>$10.8 </span>
+          </div>
+          <div><span>Shipping </span> <span>$12</span>
+          </div>
+          <div><span>Total </span> <span>$112.80</span>
+          </div>
+        </div>
+        <form class="payment-form">
+          <fieldset>
+            <legend>Shipping</legend>
+            <label for="customer-name2">Name:</label>
+            <input type="text" id="customer-name2" name="shipping">
+            <label for="email2">Email:</label>
+            <input type="email" id="email2" name="shipping">
+            <label for="address2">Address:</label>
+            <input type="text" id="address2" name="shipping">
+            <button class="button checkout-button">Next</button>
+          </fieldset>
+          <fieldset>
+            <legend>Payment</legend>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="ccnum">
+            <label for="ccv">CCV:</label>
+            <input type="text" id="ccv" name="ccv">
+            <button class="button checkout-button">Next</button>
+          </fieldset>
+          <fieldset>
+            <legend>Payment Method</legend>
+            <div class="container">
+              <input class="input" type="radio" id="Paypal2" name="payment-method">
+              <label for="Paypal2">Paypal</label>
+              <input type="radio" id="Visa2" name="payment-method">
+              <label for="Visa2">Visa</label>
+              <input type="radio" id="Interac2" name="payment-method">
+              <label for="Interac2">Interac</label>
+            </div>
+            <button type="submit" class="button checkout-button" formaction="shipping.html">Purchase</button>
+          </fieldset>
+        </form>
+      </div>
     </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
+
+  </section>
+  <!-- // COMBINED ELEMENTS SECTION -->
 
 
-    <!--Question 2 section-->
-    <section>
+  <!--Question 2 section-->
+  <div class="about-page-container">
+    <section class="about-us">
       <p>
-        <br> Given the company, define the basic branding ideas. These should include:
-
-        <br><br> What does the company do or offer?
-      <ul>
+      <h1>About Us</h1>
+      <ul class="centered-list">
+        <h3>What does the company do or offer?</h3>
         <li> It allows a growing independant artist to sell their art to customers without
           having to lose profits to fees on other websites like Etsy, RedBubble. It is also a better
           way to build brand recognition by having their own website and being able
           to easily link to it from external websites.</li>
-        <br> Who is the company to potential customers? (as a person)
+        <br>
+        <h3>Who is the company to potential customers? (as a person)</h3>
         <li> This website is a way for customers to be able to support the artist by buying art such as stickers,
           enamel pins, mousepads, tote bags, waterbottles, and apparel such as graphic tees, and sweaters. It is also
           a way for customers to contact the artist to ask for custom commissioned art, get updates on
           shipping, or a place to get updates on upcoming releases.</li>
         <br>
-        <br> Why might this company entice someone to purchase a product or service
+        <h3>Why might this company entice someone to purchase a product or service</h3>
         <li> As a Canadian artist, we wanted to reduce waste and packaging from the shipping
           industry, so we offer local pickup in Vancouver, and free shipping in Canada with
           orders over $100! We also donate 10% of our waterbottle and tote bag sales to
@@ -619,9 +657,8 @@
       </p>
     </section>
 
-
-    <!--Fonts section-->
-    <section>
+       <!--Fonts section-->
+    <section class="contact-us">
       <p>
         <br>
         3. From your branding ideas, assemble brand components including:
@@ -633,8 +670,10 @@
       </ul>
       </p>
     </section>
+ 
 
     <!--Color paletetes-->
+
     <section>
       <li>Colour palettes</li>
       <ul>
@@ -648,7 +687,7 @@
           <div id="gtea"> green tea #d0f0c0 </div>
           <div id="matcha"> matcha #69bf64 </div>
           <!--<div id="oak"> oak #d0ac81</div>
-            <div id="walnut"> walnut #533012 </div>-->
+                <div id="walnut"> walnut #533012 </div>-->
 
           <br>
           Neutral stuff:
@@ -660,124 +699,136 @@
           <div id="white">white</div>
 
       </ul>
-    </p>
+      </p>
     </section>
 
-    <!--Art direction-->
-    <section>
-      </p>
+    </section>
+  </div>
 
-      <li>Potential imagery, and, or, art direction
-        <br>
-        <div class="zoom">
-          <img src="https://i.etsystatic.com/13486711/r/il/245393/3720451436/il_794xN.3720451436_l0t2.jpg" alt="frog sticker sheet">
 
-          <br> stickers (this art isnt mine) <br><br>
-          <!--image from pintrest
+  <!--Art direction-->
+  <section id="art-direction">
+    </p>
+
+    <li>Potential imagery, and, or, art direction
+      <br>
+      <div class="zoom">
+        <img src="https://i.etsystatic.com/13486711/r/il/245393/3720451436/il_794xN.3720451436_l0t2.jpg"
+          alt="frog sticker sheet">
+
+        <br> stickers (this art isnt mine) <br><br>
+        <!--image from pintrest
                 https://i.pinimg.com/564x/2d/da/51/2dda51c8e40fb57d63546f4e8191f1c3.jpg
                 -->
-          <img src="https://i.pinimg.com/564x/2d/da/51/2dda51c8e40fb57d63546f4e8191f1c3.jpg" alt="Pastel website inspiration">
-          <br> pastel website design inspo from pinterest <br><br>
-          <img src="https://i.pinimg.com/564x/b2/40/78/b24078925594c75613b2a43bac145ae5.jpg" alt="Green website inspiration">
-        </div>
-        <br> green mood website design inspo from pinterest
-        </p>
-        </p>
-    </section>
+        <img src="https://i.pinimg.com/564x/2d/da/51/2dda51c8e40fb57d63546f4e8191f1c3.jpg"
+          alt="Pastel website inspiration">
+        <br> pastel website design inspo from pinterest <br><br>
+        <img src="https://i.pinimg.com/564x/b2/40/78/b24078925594c75613b2a43bac145ae5.jpg"
+          alt="Green website inspiration">
+      </div>
+      <br> green mood website design inspo from pinterest
+      </p>
+      </p>
+  </section>
 
-    <section id="citations">
-      <h2>Citations</h2>
+  <section id="citations">
+    <h2>Citations</h2>
 
-      <ul>
-        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a
-            href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
-        </li>
-        <li>McInerney, Impallari, Fuenzalida. Designer. 2012. Raleway [Font] Retrieved from <a
-            href="https://fonts.google.com/specimen/Raleway">https://fonts.google.com/specimen/Raleway</a></li>
-        <li>Adams, Cyreal, Le Bailly. Designer. 2011. Nunito [Font] Retrieved from <a
-            href="https://fonts.google.com/specimen/Nunito">https://fonts.google.com/specimen/Nunito</a></li>
-        <li>Geeksforgeeks. 2021. How to create a reset button in form using HTML. Retrieved from
-          <a
-            href="https://www.geeksforgeeks.org/how-to-create-a-reset-button-in-form-using-html/">https://www.geeksforgeeks.org/how-to-create-a-reset-button-in-form-using-html/</a>
-        </li>
-        <li>W3Schools. ND. CSS Forms. Retrieved from <a
-            href="https://www.w3schools.com/css/tryit.asp?filename=trycss_forms">https://www.w3schools.com/css/tryit.asp?filename=trycss_forms</a>
-        </li>
-        <li>W3Schools. ND. HTML &lt;fieldset&gt; Tag. Retrieved from <a
-            href="https://www.w3schools.com/tags/tag_fieldset.asp">https://www.w3schools.com/tags/tag_fieldset.asp</a>
-          </fieldset>
-        </li>
-        <li>W3Schools. ND. How TO - Top Navigation. Retrieved from <a
-            href="https://www.w3schools.com/howto/howto_js_topnav.asp">https://www.w3schools.com/howto/howto_js_topnav.asp</a>
-        </li>
-        <li>W3Schools. ND. Custom Range Slider. Retrieved from <a
+    <ul>
+      <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+      <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a
+          href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
+      </li>
+      <li>McInerney, Impallari, Fuenzalida. Designer. 2012. Raleway [Font] Retrieved from <a
+          href="https://fonts.google.com/specimen/Raleway">https://fonts.google.com/specimen/Raleway</a></li>
+      <li>Adams, Cyreal, Le Bailly. Designer. 2011. Nunito [Font] Retrieved from <a
+          href="https://fonts.google.com/specimen/Nunito">https://fonts.google.com/specimen/Nunito</a></li>
+      <li>Geeksforgeeks. 2021. How to create a reset button in form using HTML. Retrieved from
+        <a
+          href="https://www.geeksforgeeks.org/how-to-create-a-reset-button-in-form-using-html/">https://www.geeksforgeeks.org/how-to-create-a-reset-button-in-form-using-html/</a>
+      </li>
+      <li>W3Schools. ND. CSS Forms. Retrieved from <a
+          href="https://www.w3schools.com/css/tryit.asp?filename=trycss_forms">https://www.w3schools.com/css/tryit.asp?filename=trycss_forms</a>
+      </li>
+      <li>W3Schools. ND. HTML &lt;fieldset&gt; Tag. Retrieved from <a
+          href="https://www.w3schools.com/tags/tag_fieldset.asp">https://www.w3schools.com/tags/tag_fieldset.asp</a>
+        </fieldset>
+      </li>
+      <li>W3Schools. ND. How TO - Top Navigation. Retrieved from <a
+          href="https://www.w3schools.com/howto/howto_js_topnav.asp">https://www.w3schools.com/howto/howto_js_topnav.asp</a>
+      </li>
+      <li>W3Schools. ND. Custom Range Slider. Retrieved from <a
           href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rangeslider">https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rangeslider</a>
       </li>
-        <li>W3Schools. ND. How TO - Slideshow. Retrieved from <a
+      <li>W3Schools. HTML textarea Tag. Retrieved from <a
+          href="https://www.w3schools.com/tags/tag_textarea.asp">https://www.w3schools.com/tags/tag_textarea.asp</a>
+      </li>
+      <li>W3Schools. ND. How TO - Slideshow. Retrieved from <a
           href="https://www.w3schools.com/howto/howto_js_slideshow.asp">https://www.w3schools.com/howto/howto_js_slideshow.asp</a>
       </li>
-        <li>W3Schools. ND. CSS Buttons. Retried from <a href="https://www.w3schools.com/css/css3_buttons.asp">
-            https://www.w3schools.com/css/css3_buttons.asp
-          </a></li>
-        <li>Coding Artist. 2021. Custom Radio Buttons CSS | Pure CSS Tutorial [YouTube]. Retrieved from <a
-            href="https://www.youtube.com/watch?v=sSF0bXFUFGM">https://www.youtube.com/watch?v=sSF0bXFUFGM</a></li>
-        <li>Naoya. ND. Demo: CSS image hover effects. Retrieved from <a
-            href="https://codepen.io/nxworld/pen/ZYNOBZ">https://codepen.io/nxworld/pen/ZYNOBZ</a></li>
-        <li>Kavinda. 2020. Styling numbered lists with CSS counters. Retrieved from <a
-            href="https://blog.logrocket.com/styling-numbered-lists-with-css-counters/">https://blog.logrocket.com/styling-numbered-lists-with-css-counters/</a>
-        </li>
-        <li>Anna Blok - Frontend Tutorial. 2020. A Custom Select Box Using HTML & CSS [YouTube]. Retrieved from <a
-            href="https://www.youtube.com/watch?v=R-1Hh--SrX0">https://www.youtube.com/watch?v=R-1Hh--SrX0</a></li>
-        <li>Divinector. 2022. Responsive Shopping Cart Page design using HTML CSS | CSS Tricks [YouTube]. Retrieved from
-          <a href="https://www.youtube.com/watch?v=3vYsl8GzEms">https://www.youtube.com/watch?v=3vYsl8GzEms</a>
-        </li>
-        <li>SafaStudio. ND. Cute Frog Sticker Pack (Waterproof) [Etsy]. Retrieved from <a
-            href="https://www.etsy.com/ca/listing/1192358051/cute-frog-sticker-pack-waterproof">https://www.etsy.com/ca/listing/1192358051/cute-frog-sticker-pack-waterproof</a>
-        </li>
-        <li>TinyBeastDesignsSF. ND. Kawaii Frog Shirt Cute Frog Tshirt Cottagecore Shirt Cottagecore Frog Yume Kawaii
-          Aesthetic Clothes Cottage Core Clothing Goblincore Shirt [Etsy]. Retrieved from <a
-            href="https://www.etsy.com/ca/listing/1094184020/kawaii-frog-shirt-cute-frog-tshirt">https://www.etsy.com/ca/listing/1094184020/kawaii-frog-shirt-cute-frog-tshirt</a>
-        </li>
-        <li>Mussyhead. ND. No Thoughts Head Empty Frog Tote Bag. [Mussyhead]. Retrieved from <a
-            href="https://mussyhead.com/products/no-thoughts-head-empty-frog-tote-bag">https://mussyhead.com/products/no-thoughts-head-empty-frog-tote-bag</a>
-        </li>
-        <li>stamistudios. Cute Sakura Bird Enamel Lapel Pin Badge [Etsy]. Retrieved from <a
-            href="https://www.etsy.com/ca/listing/1085075987/cute-sakura-bird-enamel-lapel-pin-badge">https://www.etsy.com/ca/listing/1085075987/cute-sakura-bird-enamel-lapel-pin-badge</a>
-        </li>
-        <li>Elated Themes. Landing [Pinterest]. Retrieved from <a
-            href="https://www.pinterest.ca/pin/452119250089550774/">https://www.pinterest.ca/pin/452119250089550774/</a>
-        </li>
-        <li>Behance. ND. Cactus Landing Page Design Concept [Pinterest]. Retrieved from <a
-            href="https://www.pinterest.ca/pin/AU4ZxfuhFp-P81gXt4KB6XWSG8ic89-z-mXUMVXlIMo4cd991s2SHVE/">https://www.pinterest.ca/pin/AU4ZxfuhFp-P81gXt4KB6XWSG8ic89-z-mXUMVXlIMo4cd991s2SHVE/</a>
-        </li>
-        <li>John Burgerman. ND. Face This [Digital Arts Online]. Retrieved from <a
+      <li>W3Schools. ND. CSS Buttons. Retrieved from <a href="https://www.w3schools.com/css/css3_buttons.asp">
+          https://www.w3schools.com/css/css3_buttons.asp
+        </a></li>
+      <li>Coding Artist. 2021. Custom Radio Buttons CSS | Pure CSS Tutorial [YouTube]. Retrieved from <a
+          href="https://www.youtube.com/watch?v=sSF0bXFUFGM">https://www.youtube.com/watch?v=sSF0bXFUFGM</a></li>
+      <li>Naoya. ND. Demo: CSS image hover effects. Retrieved from <a
+          href="https://codepen.io/nxworld/pen/ZYNOBZ">https://codepen.io/nxworld/pen/ZYNOBZ</a></li>
+      <li>Kavinda. 2020. Styling numbered lists with CSS counters. Retrieved from <a
+          href="https://blog.logrocket.com/styling-numbered-lists-with-css-counters/">https://blog.logrocket.com/styling-numbered-lists-with-css-counters/</a>
+      </li>
+      <li>Anna Blok - Frontend Tutorial. 2020. A Custom Select Box Using HTML & CSS [YouTube]. Retrieved from <a
+          href="https://www.youtube.com/watch?v=R-1Hh--SrX0">https://www.youtube.com/watch?v=R-1Hh--SrX0</a></li>
+      <li>Divinector. 2022. Responsive Shopping Cart Page design using HTML CSS | CSS Tricks [YouTube]. Retrieved
+        from
+        <a href="https://www.youtube.com/watch?v=3vYsl8GzEms">https://www.youtube.com/watch?v=3vYsl8GzEms</a>
+      </li>
+      <li>SafaStudio. ND. Cute Frog Sticker Pack (Waterproof) [Etsy]. Retrieved from <a
+          href="https://www.etsy.com/ca/listing/1192358051/cute-frog-sticker-pack-waterproof">https://www.etsy.com/ca/listing/1192358051/cute-frog-sticker-pack-waterproof</a>
+      </li>
+      <li>TinyBeastDesignsSF. ND. Kawaii Frog Shirt Cute Frog Tshirt Cottagecore Shirt Cottagecore Frog Yume Kawaii
+        Aesthetic Clothes Cottage Core Clothing Goblincore Shirt [Etsy]. Retrieved from <a
+          href="https://www.etsy.com/ca/listing/1094184020/kawaii-frog-shirt-cute-frog-tshirt">https://www.etsy.com/ca/listing/1094184020/kawaii-frog-shirt-cute-frog-tshirt</a>
+      </li>
+      <li>Mussyhead. ND. No Thoughts Head Empty Frog Tote Bag. [Mussyhead]. Retrieved from <a
+          href="https://mussyhead.com/products/no-thoughts-head-empty-frog-tote-bag">https://mussyhead.com/products/no-thoughts-head-empty-frog-tote-bag</a>
+      </li>
+      <li>stamistudios. Cute Sakura Bird Enamel Lapel Pin Badge [Etsy]. Retrieved from <a
+          href="https://www.etsy.com/ca/listing/1085075987/cute-sakura-bird-enamel-lapel-pin-badge">https://www.etsy.com/ca/listing/1085075987/cute-sakura-bird-enamel-lapel-pin-badge</a>
+      </li>
+      <li>Elated Themes. Landing [Pinterest]. Retrieved from <a
+          href="https://www.pinterest.ca/pin/452119250089550774/">https://www.pinterest.ca/pin/452119250089550774/</a>
+      </li>
+      <li>Behance. ND. Cactus Landing Page Design Concept [Pinterest]. Retrieved from <a
+          href="https://www.pinterest.ca/pin/AU4ZxfuhFp-P81gXt4KB6XWSG8ic89-z-mXUMVXlIMo4cd991s2SHVE/">https://www.pinterest.ca/pin/AU4ZxfuhFp-P81gXt4KB6XWSG8ic89-z-mXUMVXlIMo4cd991s2SHVE/</a>
+      </li>
+      <li>John Burgerman. ND. Face This [Digital Arts Online]. Retrieved from <a
           href="https://www.digitalartsonline.co.uk/features/illustration/best-places-buy-graphic-t-shirts-2019/">https://www.digitalartsonline.co.uk/features/illustration/best-places-buy-graphic-t-shirts-2019/</a>
-        </li>
-        <li>Mike Benna. 2020. 11 Best Places To Watch The Sunset In Vancouver [Wander Vancouver]. Retrieved from <a
+      </li>
+      <li>Mike Benna. 2020. 11 Best Places To Watch The Sunset In Vancouver [Wander Vancouver]. Retrieved from <a
           href="https://wandervancouver.com/11-best-places-to-watch-the-sunset-in-vancouver/">https://wandervancouver.com/11-best-places-to-watch-the-sunset-in-vancouver/</a>
-        </li>
-        <li>Niel Palmer. 2011. Amazon Rainforest [Flickr]. Retrieved from <a
+      </li>
+      <li>Niel Palmer. 2011. Amazon Rainforest [Flickr]. Retrieved from <a
           href="https://www.flickr.com/photos/cifor/35743361712">https://www.flickr.com/photos/cifor/35743361712</a>
-        </li>
-      </ul>
+      </li>
+    </ul>
 
-    </section>
+  </section>
 
 
-    </div>
+  </div>
 
-    <footer>
-      <div class="footer-layout">
-        <div class="footer-left">
-          By Michael Su and Stephen Kerschbaumer (Team 11) for IAT 339<br>2023
-        </div>
-        <div class="footer-middle">
-          <a class="button-nav" href="index.html">Style Guide</a>
-          <a class="button-nav" href="https://github.com/joyousfrog/IAT339_P02_Team11">Github Repository</a>
-        </div>
+  <footer>
+    <div class="footer-layout">
+      <div class="footer-left">
+        By Michael Su and Stephen Kerschbaumer (Team 11) for IAT 339<br>2023
       </div>
-    </footer>
+      <div class="footer-middle">
+        <a class="button-nav" href="index.html">Style Guide</a>
+        <a class="button-nav" href="index.html#citations">Citations</a>
+        <a class="button-nav" href="https://github.com/joyousfrog/IAT339_P02_Team11">Github Repository</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
