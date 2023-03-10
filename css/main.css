@@ -801,16 +801,8 @@ input.slider {
 }
 
 .logo {
-  padding-left: 12%;
   height: 80px;
   width: auto;
+  padding-left: 2rem;
 }
 
-@media only screen and (max-width: 655px) {
-  .logo {
-    padding: 0;
-    margin: auto;
-    height: 60px;
-    width: auto;
-  }
-}
