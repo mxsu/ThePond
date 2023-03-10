@@ -72,7 +72,8 @@
         <textarea type="text" id="review" name="review" rows="7"></textarea>
         <label for="review">Rate us!:</label>
         <div class="slider-container">
-          <input type="range" class="slider" min="1" max="10" value="5" class="slider" id="myRange">
+          <input type="range" class="slider" min="1" max="10" value="5" class="slider" id="myRange"
+          onchange="rateSlider()">
         </div>
         <button class="button" id="rating-button" onclick="thankYouAlert()" >Submit</button>
         <div class="customer-review element">
