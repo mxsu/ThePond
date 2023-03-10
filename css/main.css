@@ -585,6 +585,8 @@ legend {
   padding-right: 0.7em;
 }
 
+
+
 .right-side-checkout label {
   margin-left: 10px;
 }
@@ -626,8 +628,14 @@ th {
   background: var(--color-gtea);
 }
 
+/* cart product table*/
 td {
   padding: 1rem 0.5rem;
+}
+
+tr {
+  border-bottom: 2px solid var(--color-darkgrey);
+
 }
 
 td input {

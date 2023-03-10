@@ -121,6 +121,12 @@ might need to change it for better naming*/
   flex-direction: row;
 }
 
+.cart-product-detail{
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 45%;
+ }
+
 /* right side of the checkout with totals, checkout info */
 .right-side-checkout{
   flex: 35%;
