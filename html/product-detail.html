@@ -53,6 +53,7 @@
             <br>
             <input type="number" name="quantity" value="1">
             <br>
+            <!-- changeText() changes the text to Added! when users click on the button to add an item to the cart -->
             <button class="button" onclick="changeText()" id="addToCart" value="0">Add to cart</button>
             <button id="to-checkout" class="button" onclick="location.href='cart.html'">To Checkout</button>
       </div>
@@ -62,6 +63,7 @@
         <textarea type="text" id="review" name="review" rows="7"></textarea>
         <label for="review" id="rating">Rate us!:</label>
         <div class="slider-container">
+          <!-- rateSlider() goes from a value of 0-10 and changes the value of the rating -->
           <input type="range" class="slider" min="1" max="10" value="5" class="slider" id="rating-slider"
           onchange="rateSlider()">
         </div>
